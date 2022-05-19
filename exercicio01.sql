@@ -20,8 +20,8 @@ CREATE TABLE professor(
     FOREIGN KEY (depto_id) REFERENCES departamento(id)
 );
 
-INSERT INTO departamento(nome) VALUES('Departamento de Ciência da Computação');
-INSERT INTO professor(nome, cpf, salario, depto_id) VALUES('Paulo Aguiar', '111', '10.000', 1);
+INSERT INTO departamento(nome) VALUES('DCC');
+INSERT INTO professor(nome, cpf, salario, depto_id) VALUES('Paulo Aguiar', '00000000011', 40.000, 1);
 
 
 /*
