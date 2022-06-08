@@ -3,8 +3,8 @@
 Nesta disciplina os seguintes tópicos foram abordados:
 
 - Introdução a Sistemas de Banco de Dados
-- Conceitos e Arquitetura do Sistemas de Banco de Dados; 
-- Modelos de Dados, Esquemas e Instâncias.
+  - Conceitos e Arquitetura do Sistemas de Banco de Dados; 
+  - Modelos de Dados, Esquemas e Instâncias.
 - Projeto de Banco de Dados: 
   - Modelo Conceitual, Lógico e Físico; 
   - Modelagem Conceitual - Modelo Entidade Relacionamento (ER); 
