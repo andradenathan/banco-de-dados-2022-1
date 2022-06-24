@@ -1,7 +1,8 @@
 /*
     Autor: Nathan Andrade
 
-    Exercício 6:
-    Recuperar o primeiro nome e a data de nascimento de todos os funcionários.
+    Exercício 7:
+    Recuperar o cpf dos funcionários cujo salário é inferior à 30.000 reais.
 */
+
 SELECT Cpf FROM Funcionario WHERE Salario < 30000
