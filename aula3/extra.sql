@@ -1,7 +1,7 @@
 /*
     Autor: Nathan Andrade
 
-    Exercício 10:
+    Exercício Extra:
     Recuperar o nome e a localização dos
     departamentos cuja localização inicia pela
     letra ‘S’. Apresentar os resultados ordenados
