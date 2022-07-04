@@ -15,3 +15,9 @@ SELECT Pnome FROM Funcionario f
 INNER JOIN Departamento d ON Dnumero = Dnr
 RIGHT OUTER JOIN Dependente d2 ON Fcpf = Cpf
 WHERE Cpf_gerente <> Cpf AND (SELECT COUNT(Fcpf)) >= 1  
+
+-- Busca utilizando subquery 
+-- WIP
+SELECT Pnome FROM Funcionario f 
+INNER JOIN Departamento d ON Dnumero = Dnr 
+WHERE Cpf_gerente = Cpf AND ALL (SELECT COUNT(Fcpf) FROM Dependente d2 WHERE Fcpf = Cpf)  
