@@ -1,0 +1,1 @@
+SELECT SUM(Salario) AS total_salario FROM Funcionario f;
