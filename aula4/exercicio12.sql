@@ -18,6 +18,5 @@ WHERE Cpf_gerente <> Cpf AND (SELECT COUNT(Fcpf)) >= 1
 
 -- Busca utilizando subquery 
 -- WIP
-SELECT Pnome FROM Funcionario f 
-INNER JOIN Departamento d ON Dnumero = Dnr 
-WHERE Cpf_gerente = Cpf AND ALL (SELECT COUNT(Fcpf) FROM Dependente d2 WHERE Fcpf = Cpf)  
+SELECT Pnome FROM Funcionario, Departamento d
+WHERE Cpf = Cpf_gerente AND Cpf_gerente IN (SELECT Fcpf FROM Dependente)
