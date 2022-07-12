@@ -1,0 +1,1 @@
+CREATE VIEW produto_quant AS SELECT Nome, Quant_Estoque FROM Produto;
