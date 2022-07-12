@@ -6,5 +6,11 @@
     pelo departamento número 5.
 */
 
-SELECT Pnome FROM Funcionario f 
-WHERE Dnr IN (SELECT Dnumero FROM Departamento d WHERE Dnr = 5)
+SELECT Pnome FROM Funcionario
+WHERE Cpf IN (
+	SELECT Fcpf FROM Trabalha_em 
+	INNER JOIN Projeto ON Pnr = Projnumero
+	WHERE Dnum = 5
+	GROUP BY Fcpf
+	HAVING COUNT(Projnumero) = (SELECT COUNT(*) FROM Projeto WHERE Dnum = 5)
+)
