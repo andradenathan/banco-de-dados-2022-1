@@ -2,7 +2,7 @@
 SELECT Pnome, Nome_dependente FROM Funcionario f
 INNER JOIN Departamento d ON Dnr = Dnumero
 RIGHT OUTER JOIN Dependente d2 ON Fcpf = Cpf
-WHERE Cpf_gerente = Cpf AND (SELECT COUNT(Fcpf)) >= 1   
+WHERE Cpf_gerente = Cpf
 
 -- Busca utilizando operações de conjuntos
 -- Não funciona no MySQL
